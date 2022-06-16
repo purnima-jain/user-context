@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "7a499cc8-a4f8-41ad-a9d9-0998ddb69450",
+		"name": "user-context",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get User Context",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-correlation-id",
+						"value": "1234567890",
+						"type": "text"
+					},
+					{
+						"key": "x-auth-token",
+						"value": "auth_token",
+						"type": "text"
+					},
+					{
+						"key": "x-user-id",
+						"value": "user_abcd",
+						"type": "text"
+					},
+					{
+						"key": "x-organization-id",
+						"value": "org_5555",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/v1/user-context/getUsercontext",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"user-context",
+						"getUsercontext"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
